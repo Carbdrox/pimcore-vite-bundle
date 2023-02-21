@@ -22,7 +22,7 @@ class ViteService
 
     public function hasHotReload(): bool
     {
-        return $this->env === 'dev' && file_exists($this->projectDirectory . '/vite-serve');
+        return $this->env === 'dev' && file_exists($this->projectDirectory . '/public/vite-serve');
     }
 
     public function getViteAsset(string $assetPath): string
