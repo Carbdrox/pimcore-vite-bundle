@@ -1,0 +1,31 @@
+{
+  "name": "carbdrox/pimcore-vite-bundle",
+  "version": "dev-master",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Förster",
+      "email": "github@foerster.dev",
+      "homepage": "https://foerster.dev",
+      "role": "Developer"
+    }
+  ],
+  "type": "pimcore-bundle",
+  "description": "Pimcore Vite integration",
+  "readme": "README.md",
+  "autoload": {
+    "psr-4": {
+      "Carbdrox\\Pimcore\\ViteBundle\\": "src/"
+    }
+  },
+  "require": {
+    "pimcore/pimcore": "^10.0"
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Carbdrox\\Pimcore\\ViteBundle\\PimcoreViteBundle"
+      ]
+    }
+  }
+}
