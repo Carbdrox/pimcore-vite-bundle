@@ -1,0 +1,25 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    #
+    # SERVICES
+    #
+
+    ViteBundle\Services\ViteService:
+        public: true
+        arguments:
+            $env: '%env(string:APP_ENV)%'
+            $projectDirectory: '%kernel.project_dir%'
+
+    #
+    # TWIG
+    #
+
+    ViteBundle\Twig\ViteExtension:
+        tags:
+            - { name: twig.extension }
+        arguments:
+            $viteService: '@ViteBundle\Services\ViteService'

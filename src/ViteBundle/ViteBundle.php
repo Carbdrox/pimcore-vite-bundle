@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Carbdrox\Pimcore\ViteBundle;
+namespace ViteBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 
-class PimcoreViteBundle extends AbstractPimcoreBundle
+class ViteBundle extends AbstractPimcoreBundle
 {
     use PackageVersionTrait;
 

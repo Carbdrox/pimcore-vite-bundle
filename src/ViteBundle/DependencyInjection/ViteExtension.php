@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Carbdrox\Pimcore\ViteBundle\DependencyInjection;
+namespace ViteBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class PimcoreViteExtension extends Extension
+class ViteExtension extends Extension
 {
     /**
      * {@inheritdoc}
