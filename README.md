@@ -1,4 +1,7 @@
 # Pimcore Vite Bundle
+[![Total Downloads](https://img.shields.io/packagist/dt/Carbdrox/pimcore-vite-bundle.svg?style=flat)](https://packagist.org/packages/carbdrox/pimcore-vite-bundle)
+[![Latest Version](https://img.shields.io/github/tag/Carbdrox/pimcore-vite-bundle.svg?style=flat&label=release)](https://github.com/Carbdrox/pimcore-vite-bundle/tags)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 
 This bundle adds a Service to your [Pimcore](https://github.com/pimcore/pimcore) project, which can resolve vite assets.
 
@@ -55,7 +58,7 @@ with this bundle. It will configure your vite to work in harmony with this bundl
 #### Manual vite configuration
 If you prefer to write your vite config yourself, you need to provide some files for this bundle to work correctly.  
 
-The bundle requires you to provide a `manifest.json` file, which contains all the asset paths keyed by their vite path.  
+The bundle requires you to provide a `manifest.json file, which contains all the asset paths keyed by their vite path.  
 This manifest.json will be loaded from `public/build/manifest.json`.  
 
 If you want to make use of the hot reload functionality, you need to provide a file named `vite-serve` in your public 
