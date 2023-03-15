@@ -7,6 +7,7 @@ class ViteService
     private string $env;
     private string $projectDirectory;
     private string $hotFilePath;
+    private string $hotFileContent = '';
     private mixed $viteManifest = null;
 
     public function __construct(string $env, string $projectDirectory)
@@ -74,10 +75,14 @@ class ViteService
      */
     protected function getHotAssetPath(string $assetPath): string
     {
+        if (empty($this->hotFileContent)) {
+            $this->hotFileContent = file_get_contents($this->hotFilePath);
+        }
+
         return rtrim(
             sprintf(
                 '%s/%s',
-                file_get_contents($this->hotFilePath),
+                $this->hotFileContent,
                 $assetPath
             )
         );
