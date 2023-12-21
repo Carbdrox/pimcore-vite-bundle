@@ -1,6 +1,6 @@
 {
   "name": "carbdrox/pimcore-vite-bundle",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "authors": [
     {
@@ -15,7 +15,7 @@
   "keywords": ["pimcore", "vite", "vite-bundle"],
   "autoload": {
     "psr-4": {
-      "ViteBundle\\": "src"
+      "ViteBundle\\": "src/ViteBundle/"
     }
   },
   "require": {
