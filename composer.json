@@ -1,6 +1,6 @@
 {
   "name": "carbdrox/pimcore-vite-bundle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +19,7 @@
     }
   },
   "require": {
-    "pimcore/pimcore": "^10.0"
+    "pimcore/pimcore": ">=10.0 <12.*"
   },
   "extra": {
     "pimcore": {
