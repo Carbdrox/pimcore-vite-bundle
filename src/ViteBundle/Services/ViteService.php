@@ -50,7 +50,7 @@ class ViteService
     protected function manifest(): mixed
     {
         if (!$this->viteManifest) {
-            $manifestPath = $this->projectDirectory . '/public/build/manifest.json';
+            $manifestPath = $this->projectDirectory . '/public/build/.vite/manifest.json';
 
             if (!file_exists($manifestPath) || !is_readable($manifestPath)) {
                 throw new \Exception("Can not find vite manifest file.\nSearched at: " . $manifestPath);
